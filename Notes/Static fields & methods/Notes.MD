@@ -1,17 +1,25 @@
 # Static Fields and Methods.
 
 -Static - when something is marked using this keyword, it means that it belongs to the class itself and not to the individual objects created from the class.
+
 non-static - each object has its own.
+
 static - shared by entire class.
+
 -Static members are created once and live in memory even if no objects exists.
+
 -Instance members are created every time we create an object and live inside each object.
+
 -If something:
     -must exist before objects.
     -must exist without objects.
     -must be shared across all objects
 then it cannot be an instance member.
+
 -Are like library rules and each book is an instance.
+
 -Static defines what is true about the class as a whole while instance defines what is true about one specific object.
+
 -Is a variable shared by all instances of a class.
 
     class Student{
@@ -58,12 +66,18 @@ then it cannot be an instance member.
     }
 
 -The above code shows object access.
+
 -This is needed when the method belongs to the class but the data it operates on belongs to a specific object.
+
 -Used for:
+
 1.Utility / helper methods operating on objects.
 -Methods that do not belong to one object, are general operations.
+
 2.Validation.
+
 3.Comparison between objects.
+
 4.Factory / creation logic.
 
 -Is not used when the behaviour describes the object itself.
