@@ -8,6 +8,7 @@ public class Student {
         this.name = name;
         this.age = age;
     }
+    //constructor initialization
 
     void display(){
         System.out.println(name + age);
