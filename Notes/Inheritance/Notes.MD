@@ -43,3 +43,77 @@
             d.bark();
         }
     }
+
+
+## Types of Inheritance.
+
+**1. Hierarchical**
+- One parent class, many sub-classes.
+
+    class Animal{
+        void sound(){
+            System.out.println("Animal makes a sound.");
+        }
+    }
+    class Dog extends Animal{
+        @Override
+        void sound(){
+            System.out.println("A dog barks");
+        }
+    }
+
+    class Donkey extends Animal{
+        @Override
+        void sound(){
+            System.out.println("A donkey neighs");
+        }
+    }
+
+    public class Print{
+        public static void main(String[]args){
+            //runtime-time polymorphism is achieved below
+            Animal dog = new Dog();
+            Animal donkey = new Donkey();
+
+            dog.sound();
+            donkey.sound();
+        }
+    }
+
+**2. Multilevel**
+-One parent class, one child, one grandchild, i.e. one subclass inherits from another subclass and so on.
+
+-Each level adds more specific behaviour.
+
+-Used when one wants to model a is-a(parent-child) relationship that form a chain.
+
+-Lower classes inherit methods/properties from all ancestors.
+
+
+**3. Multiple.**
+-One child, multiple parents.
+
+-This cannot be achieved using classes.
+
+-Is supported through interfaces instead.
+
+    interface Flyable{
+        void fly();
+    }
+
+    interface Swimmable{
+        void swim();
+    }
+
+    class Duck implements Flyable, Swimmable{
+        public void fly(){
+            System.out.println("Duck flies");
+        }
+
+        public void swim(){
+            System.out.println("Duck swims");
+        }
+    }
+
+    
+
