@@ -24,7 +24,7 @@ class SoftwareEngineer extends Employee implements Coder, Tester{
         System.out.println("Sell your soul for the extra dough");
     }
 
-    public void code(){
+    public void codec(){
         System.out.println("Live love laugh coding");
     }
     public void test(){
